@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main{
+    background-image: url(assets/Images/Background.jpg);
+    height: 90vh;
+    box-shadow: inset 0px 0px 400px 65px rgb(0, 0, 0);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1400px,115vw);
+    background-position: 60% 80%;
+    display: block;
+    width: 100%;
+    background-size: cover;
+}
+.black-box{
+    height: 90vh;
+    background-color: rgba(0, 0, 0,48%);
+    width: 100vw;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    /* height: 60px; */
+    justify-items: center;
+}
+nav{
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+.signinbtn{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.logo{
+    width: 152px;
+    height: 41px;
+    color: rgb(229,9,20);
+    fill: currentColor;
+}
+.dropdown{
+    width: 20px;
+    height: 20px;
+}
+.langbtn, .signinbtn{
+    padding: 7px;
+    border:0px;
+    width: 4rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 550;
+    text-align: center;
+}
+.langbtn,.langbtn1{
+    background-color: rgba(0, 0, 0, 0.201);
+    color: white;
+    width: 7rem;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 5px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 16px;
+    line-height: 1.25rem;
+    min-width: auto;
+}
+.langbtn1{
+    border: none;
+    appearance: none;
+    width: 65px;
+    outline: none;
+}
+
+.langlogo{
+    margin-right: 10px;
+    object-position: 2px;
+    width: 18px;
+    height: 18px;
+    position: sticky;
+}
+
+.signinbtn{
+    background-color: rgb(229,9,20);
+    color: white;
+    cursor: pointer;
+}
+.signinbtn:hover, .getbtn:hover{
+    background-color: rgb(189, 10, 19);
+    transition-duration: 250ms;
+    transition-property: background-color;
+}
+nav .button{
+    display: flex;
+    margin-left: 45px;
+}
+nav{
+    display: flex;
+}
+.firstSecContant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 145px;
+}
+.fSecCon{
+    color: white;
+
+}
+.fSecTitle{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.fSecP1,.fSecP2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.fSecP1{
+    margin-top: -0.8rem;
+}
+.fSecP2{
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+}
+.fsecmailbox{
+    width: 100%;
+    height: 0.8rem;
+    padding: 1.3rem 2.5rem 1.3rem 1rem;
+    background-color: rgba(16, 16, 16, 0.725);
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.405);
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    position: relative;
+}
+.fsecmailbox:focus{
+    border: 1px solid white;
+    padding: 1.6rem 2.5rem 1rem 1rem;
+}
+
+.emailLabel{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-property: margin-top,margin-left,margin-right , font-size, line-height;
+    transition-duration: 250ms;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    margin-right: 400px;
+}
+.fsecmailbox:focus ~ .emailLabel{
+    font-size: 0.8rem;
+    line-height: 8rem;
+    margin-top: -30px;
+    margin-right: 440px;
+}
+
+.fSecMailCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: -0.2rem;
+}
+
+.getbtn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 20rem; 
+    height: 3.7rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+    display: flex; 
+    align-items: center; 
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.rarrow {
+    color: white;
+    fill: currentColor;
+    height: 1.5rem;
+    margin-left: 5px; 
+}
+
+.sectionline{
+    width: 100vw;
+    height: 0.5rem;
+    background-color: rgb(33, 33, 33);
+}
+/* 
+ .first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 67px;
+    right: 60px;
+    width: 100%;
+    max-width: 73%;
+    max-height: none;
+}*/
+/* @media screen and (max-width: 1122px) {
+    .secImg video {
+        top: 52px; 
+        right: 47px;
+        width: 100%;
+        max-width: 73%;
+        max-height: none;
+    }
+}  */
+.first {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 70vw; */
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.secImg video {
+    /* position: absolute;
+    top: 51px;
+    right: 0;
+    max-width: 500px; */
+    position: absolute;
+    width: 100%;
+    top: 21.2%;
+    left: 12.2%;
+    height: 100%;
+    max-width: 75%;
+    max-height: 54%;
+    z-index: -2;
+} 
+.fullsc{
+    width: 100%;
+}
+.first > .firstCon{
+    max-width: 40vw;
+    padding: 0 6rem;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: 600;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.faqbox{
+    display: flex;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    max-width: 50vw;
+    margin: 1px auto;
+    justify-content: space-between;
+    font-size: 1.5vw;
+}
+.faqbox:hover{
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+}
+/* .faqbox svg{
+    transform: rotate(45deg);
+} */
+.second .secImg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second .secImg .bBox{
+    width: 100%;
+    max-width: 12em;
+    height: 60px;
+    background-color: black;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    top: 65%;
+}
+.bBox .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second .secImg .bBox :nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+.second .secImg .bBox div :nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    width: 11vw;
+    height: auto;
+}
+.second .secImg .bBox div :nth-child(2){
+    font-size: 12px;
+    color: rgb(63, 63, 246);
+    font-weight: 400;
+    width: 11vw;
+}
+.second .secImg .bBox :nth-child(3){
+    width: 100%;
+    height: 100%;
+}
+.third .secImg video{
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+}
+.faqdisp{
+    background-color: #2d2d2d;
+    color: white;
+    max-width: 50vw;
+    margin: 0px auto 10px auto;
+    padding: 0px 20px;
+    font-size: 1.5vw;
+    /* display: block; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.faqdisp :nth-child(1){
+    margin: 0px;
+    padding: 15px 0px;
+}
+.faqdisp :nth-child(2){
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+.btn{
+    transition-duration: 250ms;
+}
+.bottommailsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    width: 850px;
+    margin: auto;
+}
+.bottomtxt{
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.bottommailsec .fSecMailCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: -0.2rem;
+    width: 550px;
+}
+footer {
+    color: rgba(255,255,255,0.7);
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+footer .langbtn{
+    margin-top: 30px;
+}
+footer .netflixin{
+    padding: 0px;
+    margin-top: 20px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgba(255,255,255,0.7);
+}
+.footer .footer-item a{
+    color: rgba(255,255,255,0.7);
+}
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    /*  */
+    .fSecTitle{
+        font-size: 2rem;
+        font-weight: 900;
+        /* line-height: 3rem; */
+    }
+    .fSecP1,.fSecP2{
+        font-size: 1.2rem;
+    }
+    .fSecP1,.fSecP2{
+        margin-top: 0px;
+    }
+    .fSecP2{
+        margin: 0px 35px;
+    }
+    .firstSecContant{
+        margin-top: 95px;
+    }
+    .black-box,.main{
+        height: 85vh;
+    }
+    .fSecCon{
+        margin: auto;
+    }
+    .fsecmailbox{
+        width: 180px;
+        height: 0.5rem;
+    }
+    .getbtn{
+        width: 9rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    .rarrow{
+        height: 1.2rem;
+    }
+    .fSecMailCon{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0.8rem;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+    }
+    .first > .firstCon{
+        max-width: 90vw;
+        padding: 0 1rem;
+    }
+    .first div :first-child{
+        font-size: 25px;
+    }
+    .firstCon :first-child{
+        margin: 10px 0px;
+    }
+    .first div :nth-child(2){
+        font-size: 15px;
+    }
+    .first .firstCon{
+        text-align: center;
+    }
+    .secImg img{
+        width: 350px;
+    }
+    .secImg img{
+        margin: 0px;
+    }
+    .second .secImg img{
+        height: 300px;
+    }
+    .second .secImg .bBox{
+        max-width: 16em;
+        height: 45px;
+        gap: 20px;
+    }
+    .second .secImg .bBox :first-child{
+        width: 40px;
+
+    }
+    .second .secImg .bBox :nth-child(3){
+        width: 40px;
+    }
+    .second .secImg .bBox div :first-child{
+        min-width: 8.1em;
+        font-size: 13px;
+    }
+    .second .secImg .bBox div :nth-child(2){
+        min-width: 8.5em;
+    }
+    .faq h2{
+        font-size: 24px;
+    }
+    .faqbox{
+        max-width: 80vw;
+        padding: 10px;
+        align-items: center;
+        font-size: 14px;
+    }
+    .faqbox svg{
+        height: 20px;
+    }
+    .faqdisp{
+        max-width: 75vw;
+        font-size: 14px;
+    }
+    .emailLabel{
+        margin-right: 90px;
+        margin-bottom: 53px;
+    }
+    .bottommailsec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 210px;
+    }
+    .bottommailsec .fSecMailCon{
+        width: 220px;
+    }
+    .fsecmailbox:focus ~ .emailLabel{
+        font-size: 0.8rem;
+        line-height: 8rem;
+        margin-top: -30px;
+        margin-right: 130px;
+    }
+    .bottommailsec .bottomtxt{
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    footer{
+        padding: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .logo{
+        max-width: 100px;
+        justify-content: center;
+        margin: 0;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -25px;
+    }
+    nav .button{
+        margin-left: 100px;
+    }
+    .button .langbtn{
+        max-width: 110px;
+        margin-left: 30px;
+    }
+    
+    .signinbtn{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+/* For Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* color of the scrollbar track */
+    border-radius: 10px; /* round the corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* color of the scrollbar thumb */
+    border-radius: 10px; /* round the corners of the scrollbar thumb */
+    border: 2px solid #1a1a1a; /* adds space around the thumb for better visual separation */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* color of the scrollbar thumb when hovered */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* width of the scrollbar */
+    scrollbar-color: #555 #1a1a1a; /* color of the thumb and track */
+}
+
+/* For Edge and IE */
+body {
+    -ms-overflow-style: scrollbar; /* shows a classic scrollbar on IE10+ */
+}

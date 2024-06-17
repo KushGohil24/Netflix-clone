@@ -1,0 +1,270 @@
+.main{
+    background: none;
+    box-shadow:none;
+}
+.main::before{
+    content: "";
+    background-image: url(../assets/Images/Background.jpg);
+    background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+    height: 129vh;
+    width:100vw;
+}
+.hadding{
+    margin-top: 15px;
+    font-weight: 500;
+}
+.mainbox{
+    width: 310px;
+    min-height: 640px;
+    color: white;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px 60px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -30px;
+    gap: 15px;
+}
+/* .defaultcache{
+    margin-bottom: 50px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 5%;
+} */
+.signinbtn{
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 0;
+}
+.fsecmailbox{
+    width: 250px;
+}
+.emailLabel{
+    margin-right: 200px;
+}
+.emailLabel1{
+    margin-right: 100px;
+}
+.fsecmailbox:focus ~ .emailLabel{
+    margin-right: 220px;
+}
+.fsecmailbox:focus ~ .emailLabel1{
+    margin-right: 140px;
+}
+.signinsec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+footer{
+    margin-top: 100px;
+    max-width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
+    padding-left: 150px;
+}
+.txt{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+.codebtn{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 300ms;
+}
+.codebtn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.fpassword{
+    color: rgb(255, 255, 255);
+}
+.fpassword:hover{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+.container {
+    position: relative;
+    padding-left: 25px; /* Reduced left padding */
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    font-weight: 320;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+    transition: ease 200ms;
+    margin-top: 3px;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .container:hover input:checked ~ .checkmark{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 6px; /* Adjusted for smaller tick mark */
+    top: 2px; /* Adjusted for smaller tick mark */
+    width: 3px; /* Reduced width of the tick mark */
+    height: 7px; /* Reduced height of the tick mark */
+    border: solid rgb(0, 0, 0);
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+  .signupopt:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  .dot{
+    margin-left: -5px;
+  }
+  .rnotice{
+    color: rgba(195, 195, 195, 0.7);
+    font-size: 12px;
+  }
+  .notice{
+    width: 280px;
+  }
+  .lmore{
+    font-size: 13px;
+    color: #1072c2;
+    text-decoration: none;
+  }
+  .lmore:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .secl1{
+    height: 1px;
+    background-color: rgb(125, 124, 124);
+    display: none;
+  }
+  .middlesec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .fSecMailCon{
+        margin-top: 0px;
+        height: 53px;
+    }
+    .emailLabel{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main{
+        background-color: black;
+    }
+    .mainbox{
+        padding: 0px;
+        width: 80vw;
+        margin-left: 30px;
+    }
+    .fsecmailbox{
+        width: 180%;
+    }
+    .emailLabel{
+        margin-right: 190px;
+    }
+    .emailLabel1{
+        margin-right: 100px;
+    }
+    .signinbtn{
+        width: 100%;
+    }
+    footer{
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+    .secl1{
+        display: block;
+    }
+    .main::before{
+        display: none;
+    }
+    .notice{
+        width: 90vw;
+    }
+    .main{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .mainbox{
+        padding: 0px;
+        width: 85vw;
+        margin-left: 28px;
+    }
+    .fsecmailbox{
+        width: 100%;
+    }
+    .emailLabel{
+        right: 17%;
+    }
+    .emailLabel1{
+        right: 15%;
+    }
+}
